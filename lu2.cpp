@@ -1,5 +1,3 @@
-// CPP Program to decompose a matrix into 
-// lower and upper traingular matrix 
 #include <bits/stdc++.h> 
 using namespace std; 
 

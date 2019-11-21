@@ -1,6 +1,8 @@
-#include<bits/stdc++.h> 
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h> 
 #define EPSILON 0.001 
-using namespace std; 
+
 // The function is x^3 - x^2 + 2 
 double func(double x) { 
 	return x*x*x - x*x + 2; 
@@ -11,13 +13,13 @@ double derivFunc(double x) {
 } 
 // Function to find the root 
 void newtonRaphson(double x) 
-{ 
-	double h = func(x) / derivFunc(x); 
+{   double h = 0;
+	h = func(x) / derivFunc(x); 
 	for (int i=0; i<100; i++) { 
 		h = func(x)/derivFunc(x); 
 		x = x - h; 
 	} 
-	cout << "The value of the root is : " << x; 
+	printf("%d", x);
 } 
 // Driver program to test above 
 int main() { 
